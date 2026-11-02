@@ -1,0 +1,217 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 40px;
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.logo-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #f97316;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.logo h2 {
+    font-size: 23px;
+    font-weight: 800;
+    color: #222222;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: #f97316;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #374151;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    padding: 10px 0;
+
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+
+/* Hover colour */
+
+.navbar a:hover {
+    color: #f97316;
+}
+
+
+/* ==============================
+   UNDERLINE ANIMATION
+================================= */
+
+.navbar a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 2px;
+
+    background-color: #f97316;
+
+    transition: width 0.3s ease;
+}
+
+
+/* Underline on hover */
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+
+/* Underline on active page */
+
+.navbar a.active {
+    color: #f97316;
+}
+
+.navbar a.active::after {
+    width: 100%;
+}
+
+
+/* ==============================
+   EXPLORE NOTES BUTTON
+================================= */
+
+.explore-btn {
+    background-color: #f97316;
+    color: white !important;
+
+    padding: 11px 18px !important;
+
+    border-radius: 8px;
+
+    font-size: 15px !important;
+    font-weight: 600 !important;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #ea580c;
+    transform: translateY(-2px);
+}
+
+
+/* Remove underline from CTA */
+
+.explore-btn::after {
+    display: none;
+}
+
+
+.hero {
+    padding: 65px 20px;
+    text-align: center;
+    background: #fffaf5;
+}
+
+.hero span {
+    color: #f97316;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #262626;
+    margin: 18px 0;
+    line-height: 1.2;
+}
+
+.hero h1 b {
+    color: #f97316;
+}
+
+.hero p {
+    max-width: 520px;
+    margin: 0 auto 25px;
+    color: #737373;
+    line-height: 1.7;
+}
+
+.hero a {
+    display: inline-block;
+    background: #f97316;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero a:hover {
+    background: #ea580c;
+}
+
+
