@@ -1,0 +1,273 @@
+body{
+    background-color: blanchedalmond;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: sticky;
+    z-index: 99;
+    top: 0;
+}
+nav{
+    /* border: 2px solid forestgreen; */
+    display: flex;
+    padding: 20px;
+    background-color: forestgreen;
+    margin-bottom: 40px;
+    border-bottom: 2px solid black;
+    
+}
+nav input{
+    padding: 5px;
+    margin-left: 620px;
+    border-radius: 4px;
+    width: 250px;
+
+}
+nav ul{
+    display: flex;
+    
+    list-style: none
+
+}
+nav ul a{
+    text-underline-offset: 8px;
+    /* text-decoration: none; */
+    color: blanchedalmond;
+    padding: 10px;
+    width: 400px;
+    font-size: 17px;
+    margin:0 10px 0 10px;
+    font-family: monospace;
+    
+}
+nav ul a:hover{
+    background-color: blanchedalmond;
+    color: limegreen;
+    border-radius: 4px;
+}
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: black;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.link:hover::after {
+  transform: scaleX(1);
+}
+.container{
+    display:  flex;
+    justify-content: center;
+
+}
+img{
+    display: flex;
+    width: 400;
+    height: 200px;
+    margin: 20px;
+    border-radius: 8px;
+    justify-items: center;
+    border: 2px solid gray;
+}
+.box1,.box2,.box3{
+    width: 400px;
+    height: 600px;
+    margin:0 20px 0 20px;
+    border: 2px solid gray;
+
+    overflow: scroll;
+    background-color: whitesmoke;
+
+}
+.box1 img{
+    width: auto ;
+    height: 200px;
+    border-radius: 8px;
+    border: 2px solid gray;
+}
+h2{
+    margin: 10px 0 10px 10px;
+}
+p{
+    margin: 0 0 0 10px;
+}
+
+/* hero section */
+
+.hero{
+    background-color: forestgreen;
+    height: 500px;
+    margin-top: 30px;
+    border-radius: 30px;
+    color: blanchedalmond;
+    justify-content: center;
+    align-content: center;
+}
+.hero h1{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 30px 0;
+    font-size: 50px;
+}
+.hero h2{
+    display: flex;
+    justify-content: center;
+    word-spacing: 100px;
+    font-family: monospace;
+    text-transform: capitalize;
+    color: cyan;
+    font-size: 23px;
+}
+.hero h3{
+    margin: 50px 100px 0 100px;
+    word-spacing: 9px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 32px;
+    background-color: blanchedalmond;
+    color: forestgreen;
+
+}
+span{
+    margin: 0 20px 0 20px;
+    text-shadow: 2px 2px 2px limegreen;
+    color: limegreen;
+}
+
+
+
+
+
+/* footer */
+footer{
+    height: 200px;
+    background-color: #232F3E;
+    margin-top: 200px;
+    color: white;
+    /* width: 40px; */
+}
+footer p{
+    position: relative;
+    top: 50px;
+    justify-self: center;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    nav ul a {
+        display: block;
+        width: auto;
+        text-align: center;
+        margin: 5px;
+        padding: 8px 15px;
+    }
+
+    nav input {
+        margin: 10px 0;
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    /* Container */
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* Boxes */
+    .box1, .box2, .box3 {
+        width: 90%;
+        height: 450px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* Images */
+    img {
+        max-width: 90%;
+        height: auto;
+        margin: 15px auto;
+    }
+
+    .box1 img {
+        width: 90%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /* Headings */
+    h2 {
+        font-size: 20px;
+    }
+
+    /* Hero section */
+    .hero {
+        height: auto;
+        min-height: 350px;
+        margin: 20px 10px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+        word-spacing: 10px;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h3 {
+        font-size: 14px;
+        margin: 30px 10px;
+        padding: 15px;
+        text-align: center;
+        word-spacing: 3px;
+    }
+
+    span {
+        margin: 0 5px;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        min-height: 150px;
+        margin-top: 60px;
+        padding: 30px 15px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+}
